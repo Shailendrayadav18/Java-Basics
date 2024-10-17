@@ -4,21 +4,14 @@ import java.util.Scanner;
 
 public class greatestCommonDivisor {
     public static int returnGreatestDivisor(int a, int b){
-        if(a>b){
-            for(int i=b; i>=1; i--){
-                if(b%i==0 && a%i==0){
-                    return i;
-                }
+        while(a != b){
+            if(a>b){
+                a=a-b;
+            }else{
+                b=b-a;
             }
         }
-        else{
-            for(int i=a; i>=1; i--){
-                if(a%i==0 && b%i==0){
-                    return i;
-                }
-            }
-        }
-        return a;
+        return b;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

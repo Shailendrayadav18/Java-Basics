@@ -13,7 +13,7 @@ public class fibonacciSeries{
             System.out.print(next+" ");
             previous=present;
             present=next;
-
+            
         }
         return;
     }

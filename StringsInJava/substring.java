@@ -6,5 +6,7 @@ public class substring {
         String name= sentence.substring(11, sentence.length());
 
         System.out.println(name);
+
+        //Strings are immutable
     }
 }
